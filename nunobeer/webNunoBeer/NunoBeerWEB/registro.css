@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registro-container {
+    width: 350px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6B4F4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8d6a6a;
+}
+
+.menu {
+    background-color: #6B4F4F;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 1rem;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #FFD700;
+}
+
+header {
+    position: relative; /* Necessário para posicionar o ícone dentro do header */
+}
+/* Estilo do header */
+header {
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa a largura total da página */
+    background-color: #6B4F4F; /* Cor de fundo para destaque */
+    color: white; /* Cor do texto */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
+
+/* Estilo do menu */
+.menu ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Organiza os itens horizontalmente */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Espaçamento interno do menu */
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento ao redor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.menu ul li a:hover {
+    background-color: #8A6565; /* Destaque ao passar o mouse */
+}
+
+/* Para ajustar o conteúdo principal */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding-top: 60px; /* Espaço reservado para o header fixo */
+}
+
+.registro-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF4E6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

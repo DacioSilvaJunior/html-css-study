@@ -1,0 +1,148 @@
+/* Fundo e fontes básicas */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e6;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6B4F4F;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Estilo do contêiner do produto */
+.produto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Detalhes do produto */
+.produto-detalhes {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.produto-detalhes h2 {
+    color: #6B4F4F;
+    margin-bottom: 0.5rem;
+}
+
+.produto-detalhes p {
+    margin-bottom: 1rem;
+}
+
+/* Preço e botão */
+.preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.botao-comprar {
+    background-color: #6B4F4F;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #8d6a6a;
+}
+
+footer {
+    background-color: #6B4F4F;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.botao-comprar {
+    display: inline-block;
+    background-color: #6B4F4F;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #8d6a6a;
+}
+
+/* Estilo do Menu de Navegação */
+.menu {
+    background-color: #6B4F4F;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 1rem;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #FFD700;
+}
+
+.login-icon {
+    position: fixed; /* Fixa o ícone em relação à janela */
+    top: 10px; /* Alinha no topo da janela */
+    right: 10px; /* Alinha à direita da janela */
+    text-decoration: none;
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+.login-icon img {
+    width: 30px; /* Tamanho do ícone */
+    height: 30px;
+    border-radius: 50%; /* Torna o ícone redondo, se necessário */
+    transition: transform 0.3s;
+}
+
+.login-icon img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+.descricao{
+    color-scheme: black;
+    color: #333;
+}

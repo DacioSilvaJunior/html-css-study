@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e6;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #6B4F4F;
+    color: #fff;
+    padding: 1rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.botao-enviar {
+    background-color: #6B4F4F;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #8d6a6a;
+}
+
+footer {
+    background-color: #6B4F4F;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Estilo do Menu de Navegação */
+.menu {
+    background-color: #6B4F4F;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 1rem;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #FFD700;
+}
+.login-icon {
+    position: fixed; /* Fixa o ícone em relação à janela */
+    top: 10px; /* Alinha no topo da janela */
+    right: 10px; /* Alinha à direita da janela */
+    text-decoration: none;
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+.login-icon img {
+    width: 30px; /* Tamanho do ícone */
+    height: 30px;
+    border-radius: 50%; /* Torna o ícone redondo, se necessário */
+    transition: transform 0.3s;
+}
+
+.login-icon img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+.descricao{
+    color-scheme: black;
+    color: #333;
+}
