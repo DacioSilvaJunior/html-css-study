@@ -1,162 +1,141 @@
+/* Reset básico */
+body, h1, p, ul, li, form, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral do body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f1e6;
+    background-color: #f8f4eb; /* Fundo neutro para contraste */
+    color: #333; /* Cor padrão do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #8b5e34; /* Marrom com estilo de cerveja */
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    gap: 20px;
 }
 
-.login-container {
-    width: 300px;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+header nav ul li {
+    display: inline;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-top: 1rem;
-    color: #333;
-}
-
-input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    justify-content: center;
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #6B4F4F;
+header nav ul li a {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #8d6a6a;
-}
-
-.criar-conta-container {
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-}
-
-.botao-criar-conta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6B4F4F;
-    color: white;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.botao-criar-conta:hover {
-    background-color: #8A6565;
-}
-.menu {
-    background-color: #6B4F4F;
-    padding: 1rem 0;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menu ul li {
-    margin: 0 1rem;
-}
-
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
     transition: color 0.3s;
 }
 
-.menu ul li a:hover {
-    color: #FFD700;
+header nav ul li a:hover {
+    color: #ffd700; /* Destaque ao passar o mouse */
 }
 
-header {
-    position: relative; /* Necessário para posicionar o ícone dentro do header */
-}
-/* Estilo do header */
-header {
-    position: fixed; /* Fixa o header no topo da página */
-    top: 0; /* Alinha no topo */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* Ocupa a largura total da página */
-    background-color: #6B4F4F; /* Cor de fundo para destaque */
-    color: white; /* Cor do texto */
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+/* Estilização do formulário */
+main {
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Estilo do menu */
-.menu ul {
-    list-style: none; /* Remove as bolinhas da lista */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Organiza os itens horizontalmente */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 10px 20px; /* Espaçamento interno do menu */
+main h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #8b5e34; /* Destaque no título */
 }
 
-.menu ul li {
-    margin: 0;
-}
-
-.menu ul li a {
-    text-decoration: none; /* Remove sublinhado */
-    color: white; /* Cor do texto */
-    padding: 10px 15px; /* Espaçamento ao redor do texto */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Transição suave */
-}
-
-.menu ul li a:hover {
-    background-color: #8A6565; /* Destaque ao passar o mouse */
-}
-
-/* Para ajustar o conteúdo principal */
-body {
-    margin: 0; /* Remove margens padrão */
-    padding-top: 60px; /* Espaço reservado para o header fixo */
-}
-
-.registro-container {
+form {
+    background-color: #fff;
     padding: 20px;
-    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
-    background-color: #FFF4E6;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #8b5e34; /* Cor de destaque no campo ativo */
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b5e34; /* Botão marrom */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffd700; /* Dourado ao passar o mouse */
+}
+
+/* Link de registro */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #8b5e34;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

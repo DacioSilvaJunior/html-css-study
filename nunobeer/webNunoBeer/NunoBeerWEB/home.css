@@ -75,20 +75,22 @@ header {
 
 .login-icon {
     position: absolute; /* Permite posicionar o ícone no canto */
-    top: 50%; /* Centraliza verticalmente */
+    top: 10px; /* Posiciona no topo */
     right: 10px; /* Alinha à direita com uma margem */
-    transform: translateY(-50%); /* Ajusta a centralização vertical */
     text-decoration: none;
 }
 
 .login-icon img {
-    width: 30px; /* Tamanho do ícone */
-    height: 30px;
-    border-radius: 50%; /* Torna o ícone redondo, se necessário */
-    transition: transform 0.3s;
+    width: 50px; /* Aumenta o tamanho do ícone */
+    height: 50px;
+    border-radius: 50%; /* Mantém o ícone redondo */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transições suaves */
 }
 
+/* Efeito de hover */
 .login-icon img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra */
+    cursor: pointer; /* Muda o cursor para indicar clicável */
 }
 

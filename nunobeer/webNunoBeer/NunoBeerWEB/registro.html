@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Nova Conta</title>
+    <title>Registrar-se</title>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
     <link rel="stylesheet" href="registro.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="pagina-de-vendas.html">Vendas</a></li>
-                <li><a href="historia.html">Nossa Historia</a></li>
-                <li><a href="login.html" class="login-icon" title="Login">
-                    <img src="login-icon.png" alt="Login">
-                </a></li>
+                <li><a href="historia.html">Nossa historia</a></li>
             </ul>
         </nav>
     </header>
-    <div class="registro-container">
-        <h1>Criar Nova Conta</h1>
-        <form action="registro.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
+    <main>
+        <h1>Criar Conta</h1>
+        <form id="register-form">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-   
+            <input type="email" id="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
+    </main>
+    <script src="firebase-config.js"></script>
+    <script src="registro.js"></script>
+</body>
+</html>
