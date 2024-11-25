@@ -4,6 +4,8 @@ atravez da criação de um site para vendas de cerveja tendo com seus componente
 todas estas complementadas por um menu superior que permite permutar entre as mesmas
 alem disso tb um loguin e criaçao de conta(não completamente implementado)
 
+MVP: https://<DacioSilvaJunior>.github.io/<html-css-study>
+
 Requisitos Funcionais:
 Navegação:
 
