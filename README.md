@@ -74,4 +74,3 @@ Escalabilidade:
 Estruturar o site para permitir a expansão futura, como a adição de novos produtos ou funcionalidades (ex: pagamentos online).
 SEO (Search Engine Optimization):
 
-Utilizar tags adequadas como <meta>, <h1>, <h2> e descrições claras para melhorar a visibilidade em mecanismos de busca.
